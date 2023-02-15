@@ -13,7 +13,7 @@ const camisetas = [
     {id:9, nombre: "River Plate", imagen:"../imagenes/river.jpg", precio: 15000, cantidad: 1},
     {id:10, nombre: "Rosario Central", imagen:"../imagenes/rosario-central.jpg", precio: 8000, cantidad: 1},
     {id:11, nombre: "San Lorenzo de Almagro", imagen:"../imagenes/san-lorenzo.jpg", precio: 9000, cantidad: 1},
-    {id:12, nombre: "Talleres de Cordoba", imagen:"../imagenes/talleres.jpg", precio: 7000, cantidad: 1}
+    {id:12, nombre: "Talleres de Cordoba", imagen:"./imagenes/talleres", precio: 7000, cantidad: 1}
 ]
 
 camisetas.forEach (item => {
