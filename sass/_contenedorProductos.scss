@@ -1,12 +1,65 @@
 main {
     h1 {
-        font-family: $tipografiaTitulos;
-        text-align: center;
-        font-size: 30px;
+        @include titulos ($tipografiaTitulos, center, 30px);
     }
     #contenedorProductos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
+        padding: 3rem;
+        .flip-card {
+            background-color: transparent;
+            @include tamano (300px, 300px);
+            border: 1px solid #f1f1f1;
+            perspective: 1000px; 
+            &:hover .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+            .flip-card-inner {
+                position: relative;
+                @include tamano (100%, 100%);
+                text-align: center;
+                transition: transform 1s;
+                transform-style: preserve-3d;
+                .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    @include tamano (100%, 100%);
+                    -webkit-backface-visibility: hidden; 
+                    backface-visibility: hidden;
+                }
+                .flip-card-front {
+                    background-color: white;
+                    color: black;
+                    img {
+                        @include tamano (300px, 300px);
+                    }
+                }
+                .flip-card-back {
+                    background-color: $colorPrincipal;
+                    color: white;
+                    transform: rotateY(180deg);
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .tituloCard {
+                        @include titulos ($tipografiaTitulos, center, 25px);
+                    }
+                    p{
+                        @extend .tituloCard; 
+                        font-weight: 600;
+                    }
+                    button {
+                        background-color: $colorSecundario;
+                        padding: 1rem;
+                        border-radius: 5px;
+                        border: none;
+                        width:fit-content;
+                        color: white
+                    }
+                }
+            }
+        }
     }
 }

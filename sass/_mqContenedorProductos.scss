@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+    main {
+        #contenedorProductos {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 1rem;
+            .flip-card {
+                @include tamano (150px, 150px);
+                .flip-card-inner {
+                    .flip-card-front {
+                        img {
+                            @include tamano (100%, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

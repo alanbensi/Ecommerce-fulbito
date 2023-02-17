@@ -19,12 +19,16 @@ const camisetas = [
 camisetas.forEach (item => {
     contenedorProductos.innerHTML += 
     `
-    <div class="card" style="width: 18rem;">
-        <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
-        <div class="card-body">
-            <h3 class="card-title">${item.nombre}</h3>
-            <p>PRECIO: $ ${item.precio}</p>
-            <button class="btn btn-primary" id="camiseta${item.id}">AGREGAR AL CARRITO</button>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="${item.imagen}" alt="${item.nombre}">
+            </div>
+            <div class="flip-card-back">
+                <h3 class="tituloCard">Camiseta ${item.nombre} 2023</h3>
+                <p>PRECIO: $${item.precio}</p>
+                <button id="camiseta${item.id}">Agregar al carrito</button>
+            </div>
         </div>
     </div>
     `

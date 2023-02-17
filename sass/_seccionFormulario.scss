@@ -1,0 +1,35 @@
+main {
+    section {
+        .tituloFormulario {
+            @include titulos ($tipografiaTitulos, center, 25px)
+        }
+        .formularioContacto {
+            padding: 2rem 12rem;
+            gap: 30px;
+            display: grid;
+            grid-template-areas: 
+                                "nombre apellido"
+                                "mail telefono"
+                                "consulta consulta"
+                                "enviar enviar";
+            .inputNombre {
+                grid-area: nombre;
+            }
+            .inputApellido {
+                grid-area: apellido;
+            }
+            .inputMail {
+                grid-area: mail;
+            }
+            .inputTelefono {
+                grid-area: telefono;
+            }
+            .textArea {
+                grid-area: consulta;
+            }
+            .inputSubmit {
+                grid-area: enviar;
+            }
+        }
+    }
+}
