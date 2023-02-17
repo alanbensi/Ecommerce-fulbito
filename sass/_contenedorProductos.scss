@@ -56,7 +56,10 @@ main {
                         border-radius: 5px;
                         border: none;
                         width:fit-content;
-                        color: white
+                        color: white;
+                        &:hover{
+                            background-color: $colorTerciario;
+                        }
                     }
                 }
             }

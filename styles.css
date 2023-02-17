@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  padding-right: 3rem;
+  padding: 2.5rem 3rem;
 }
 header .botonCarrito {
   font-size: 23px;
@@ -81,6 +81,9 @@ main #contenedorProductos .flip-card .flip-card-inner .flip-card-back button {
   width: fit-content;
   color: white;
 }
+main #contenedorProductos .flip-card .flip-card-inner .flip-card-back button:hover {
+  background-color: #00233A;
+}
 
 main section .tituloFormulario {
   font-family: "Raleway", sans-serif;
@@ -117,6 +120,9 @@ main section .formularioContacto .inputSubmit {
   border: none;
   color: white;
   border-radius: 10px;
+}
+main section .formularioContacto .inputSubmit:hover {
+  background-color: #00233A;
 }
 main section .formularioContacto input, main section .formularioContacto textarea {
   border: none;
@@ -180,6 +186,7 @@ footer div .contenedorRedes a {
   main #contenedorProductos .flip-card .flip-card-inner .flip-card-back button {
     padding: 0.1rem;
     width: 145px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 600px) {

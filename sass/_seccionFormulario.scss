@@ -36,6 +36,9 @@ main {
                 border: none;
                 color:white;
                 border-radius: 10px;
+                &:hover {
+                    background-color: $colorTerciario;
+                }
             }
             input, textarea {
                 border: none;
