@@ -3,7 +3,7 @@ const contenedorProductos = document.getElementById("contenedorProductos")
 
 const camisetas = [ 
     {id:1, nombre: "Argentinos Juniors", imagen:"./imagenes/argentinos.jpg", precio: 8000, cantidad: 1},
-    {id:2, nombre: "Banfield", imagen:"./imagenes/banfield.jpg", precio: 6000, cantidad: 1},
+    {id:2, nombre: "Banfield", imagen:"../imagenes/banfield.jpg", precio: 6000, cantidad: 1},
     {id:3, nombre: "Belgrano de Cordoba", imagen:"./imagenes/belgrano.jpg", precio: 6000, cantidad: 1},
     {id:4, nombre: "Boca Juniors", imagen:"./imagenes/boca.jpg", precio: 12000, cantidad: 1},
     {id:5, nombre: "Independiente", imagen:"./imagenes/independiente.jpg", precio: 9000, cantidad: 1},

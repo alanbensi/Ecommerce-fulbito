@@ -104,6 +104,27 @@ main section .formularioContacto .inputSubmit {
   grid-area: enviar;
 }
 
+footer {
+  padding: 5rem 2rem;
+}
+footer div {
+  justify-content: center;
+}
+footer div .tituloFooter {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  font-size: 20px;
+  margin-right: 3rem;
+}
+footer div .contenedorRedes {
+  display: flex;
+  flex-direction: column;
+}
+footer div .contenedorRedes a {
+  color: black;
+  font-size: 35px;
+}
+
 @media only screen and (max-width: 600px) {
   main #contenedorProductos {
     grid-template-columns: 1fr 1fr;
