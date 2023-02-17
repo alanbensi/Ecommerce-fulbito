@@ -5,11 +5,21 @@
             gap: 15px;
             padding: 1rem;
             .flip-card {
-                @include tamano (150px, 150px);
+                margin: 0 auto;
+                @include tamano (180px, 180px);
                 .flip-card-inner {
                     .flip-card-front {
                         img {
                             @include tamano (100%, 100%);
+                        }
+                    }
+                    .flip-card-back{
+                        .tituloCard {
+                            font-size: 18px;
+                        }
+                        button {
+                            padding: 0.1rem;
+                            width: 145px;
                         }
                     }
                 }

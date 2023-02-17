@@ -47,8 +47,8 @@ main {
                         @include titulos ($tipografiaTitulos, center, 25px);
                     }
                     p{
-                        @extend .tituloCard; 
-                        font-weight: 600;
+                        font-weight: 500;
+                        font-family: $tipografiaTextos;
                     }
                     button {
                         background-color: $colorSecundario;

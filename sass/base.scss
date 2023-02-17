@@ -2,6 +2,7 @@
 @import "_mixins";
 
 @import "_estilosGenerales";
+@import "_header"; 
 @import "_contenedorProductos";
 @import "_seccionFormulario"; 
 @import "_footer";
@@ -12,7 +13,8 @@
 
 
 //MEDIA QUERYS
-
-@import "_mqContenedorProductos"
+@import "_mqHeader";
+@import "_mqContenedorProductos";
+@import "_mqSeccionFormulario";
 
 

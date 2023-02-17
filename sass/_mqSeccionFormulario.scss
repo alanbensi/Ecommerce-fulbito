@@ -1,0 +1,57 @@
+@media only screen and (max-width: 600px) {
+    main {
+        section {
+            .tituloFormulario {
+                font-size: 20px;
+            }
+            .formularioContacto {
+                padding: 1rem 2rem;
+                gap: 20px;
+                display: grid;
+                grid-template-areas: 
+                                    "nombre"
+                                    "apellido"
+                                    "mail"
+                                    "telefono"
+                                    "consulta"
+                                    "enviar";
+                .inputNombre {
+                    grid-area: nombre;
+                }
+                .inputApellido {
+                    grid-area: apellido;
+                }
+                .inputMail {
+                    grid-area: mail;
+                }
+                .inputTelefono {
+                    grid-area: telefono;
+                }
+                .textArea {
+                    grid-area: consulta;
+                    margin-bottom: 1rem;
+                }
+                .inputSubmit {
+                    grid-area: enviar;
+                    margin: 0 auto;
+                    width: 200px;
+                    background-color: $colorSecundario;
+                    padding: 1rem;
+                    border: none;
+                    color:white;
+                    border-radius: 10px;
+                }
+                input, textarea {
+                    border: none;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                    font-size: 15px;
+                    font-family: $tipografiaTextos;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

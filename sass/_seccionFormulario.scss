@@ -29,6 +29,23 @@ main {
             }
             .inputSubmit {
                 grid-area: enviar;
+                margin: 0 auto;
+                width: 200px;
+                background-color: $colorSecundario;
+                padding: 1rem;
+                border: none;
+                color:white;
+                border-radius: 10px;
+            }
+            input, textarea {
+                border: none;
+                padding: 1rem;
+                border-radius: 10px;
+                font-size: 18px;
+                font-family: $tipografiaTextos;
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }
