@@ -35,9 +35,11 @@
                 </div>
             </div>
         </nav>
-        <button class="btn botonCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> 
-            <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon>
-        </button>
+        <div class="d-flex align-items-center" id="contenedorContadorCarrito">
+            <button class="btn botonCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> 
+                <iconify-icon icon="material-symbols:shopping-cart"></iconify-icon>
+            </button>
+        </div>
     </header>
     <main>
         <h1>El lugar del Futbol Argentino</h1>
@@ -45,11 +47,26 @@
         <aside>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <p>CARRITO VACIO POR AHORA</p>
+                    <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th class="tituloTabla" scope="col">Producto</th>
+                                <th class="tituloTabla" scope="col">Cantidad</th>
+                                <th class="tituloTabla" scope="col">Precio</th>
+                                <th class="tituloTabla" scope="col">X</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carritoOffcanvas"></tbody>
+                    </table>
+                    <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+                        <p id="precioTotalCarrito">Precio Total: </p>
+                        <button id="terminarCompra" class="botonComprar">COMPRAR</button>
+                    </div>
                 </div>
             </div>
         </aside>
